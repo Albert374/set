@@ -4,7 +4,7 @@ document.getElementById('registroForm').addEventListener('submit', function(even
     const nombre = document.getElementById('nombre').value;
     const telefono = document.getElementById('telefono').value;
 
-    emailjs.send('service_n0toocd', 'template_avf7ioc', {
+    emailjs.send("service_n0toocd", "template_avf7ioc", {
         nombre: nombre,
         telefono: telefono
     }).then(function(response) {
@@ -22,4 +22,4 @@ document.getElementById('registroForm').addEventListener('submit', function(even
 });
 
 // Inicializar EmailJS
-emailjs.init('clcXbpntO9q4ne1tt'); // Reemplaza con tu Public Key
+emailjs.init("clcXbpntO9q4ne1tt"); // Reemplaza con tu Public Key
