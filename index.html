@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5N Equipo N. 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>5N Equipo N. 3</h1>
+    </header>
+
+    <section id="registro" style="display: block;">
+        <h2>Registro para Ingresar</h2>
+        <p>Por favor, ingresa tus datos a continuación. Los datos de registro son solo para análisis de tráfico.</p>
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Debe tener 10 dígitos">
+            <br><br>
+            <input type="submit" value="Ingresar">
+        </form>
+        <p id="mensaje-enviado" style="color: green; display: none;">¡Formulario enviado con éxito!</p>
+        <p id="mensaje-error" style="color: red; display: none;">Hubo un error al enviar el formulario.</p>
+    </section>
+
+    <section id="quienes-somos" style="display: none;">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos un equipo comprometido con la conservación del medio ambiente y la promoción de acciones sostenibles. Nuestro objetivo es educar y motivar a la comunidad para que participe en iniciativas de reforestación y preservación de especies endémicas.</p>
+        <ul>
+            <li><strong>Escalante Ávila Zaid Alberto:</strong> Especialista en botánica y conservación de ecosistemas.</li>
+            <li><strong>Daniel Antoonie Olono Manrriquez:</strong> Experto en educación ambiental y desarrollo sostenible.</li>
+            <li><strong>Dereck Damian Bautista Gastelum:</strong> Activista y coordinador de proyectos comunitarios.</li>
+        </ul>
+    </section>
+
+    <section id="seccionPrincipal" style="display: none;">
+        <h2>Bienvenido a la Sección Principal</h2>
+        <p>En esta sección, encontrarás información sobre:</p>
+        <ul>
+            <li><strong>Conciencia y Acción Ambiental:</strong> La importancia de cuidar nuestro planeta y los pasos que podemos tomar para ayudar.</li>
+            <li><strong>Reforestación Interactiva:</strong> Un proyecto donde podrás participar activamente en la reforestación utilizando plantas endémicas.</li>
+            <li><strong>Plantas Endémicas:</strong> Aprenderás sobre las plantas que son nativas de nuestra región y su importancia ecológica.</li>
+        </ul>
+        <p>Te invitamos a explorar cómo puedes contribuir a la conservación del medio ambiente y la biodiversidad de nuestra área. Cada pequeño esfuerzo cuenta y puede hacer una gran diferencia en el futuro de nuestro planeta.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 5N Equipo N. 3. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:likenice12@gmail.com">likenice12@gmail.com</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
